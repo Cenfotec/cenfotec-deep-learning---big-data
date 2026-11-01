@@ -9,7 +9,7 @@
 -- MAGIC ## Cómo abrirlo
 -- MAGIC
 -- MAGIC 1. En Databricks, ve a **Workspace** (barra izquierda) y entra a tu carpeta de usuario.
--- MAGIC 2. Clic en **Create → Git folder**. Pega la URL de **tu** repositorio (por ejemplo `https://github.com/ana-mora/dlbd-cenfotec`) y clic en **Create Git folder**. Esto se hace una sola vez: el mismo Git folder sirve para todos los laboratorios.
+-- MAGIC 2. Clic en **Create → Git folder**. Pega la URL de **tu** repositorio (por ejemplo `https://github.com/ana-mora/dlbd-cenfotec`). En **Git folder name** escribe cualquier nombre, por ejemplo `dlbd-cenfotec`; deja **Sparse checkout mode** sin marcar. Clic en **Create Git folder**. Esto se hace una sola vez: el mismo Git folder sirve para todos los laboratorios.
 -- MAGIC 3. Dentro del Git folder, abre `lab1` → `parte3_bronce`. Databricks lo muestra como notebook, con celdas.
 -- MAGIC 4. Arriba a la derecha, en **Connect**, elige **Serverless**.
 -- MAGIC 5. Ejecuta las celdas en orden con **Shift + Enter**.

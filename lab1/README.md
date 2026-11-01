@@ -6,7 +6,7 @@ Las tres partes se hacen en orden. Cada una se abre en una herramienta distinta:
 |---|---|---|---|
 | 1. Cuentas y acceso | `parte1_verificacion.ipynb` | Google Colab | En Colab: **Archivo → Abrir cuaderno → GitHub**, tu repositorio, este archivo. |
 | 2. Extracción y carga | `parte2_extraccion.ipynb` | Google Colab | Igual que la Parte 1. |
-| 3. Capa bronce | `parte3_bronce.sql` | **Databricks** | En Databricks: **Workspace → Create → Git folder** con la URL de tu repositorio; dentro, abre `lab1` → `parte3_bronce` y conéctalo a **Serverless**. |
+| 3. Capa bronce | `parte3_bronce.sql` | **Databricks** | En Databricks: **Workspace → Create → Git folder** con la URL de tu repositorio y cualquier nombre en *Git folder name*; dentro, abre `lab1` → `parte3_bronce` y conéctalo a **Serverless**. |
 
 > `parte3_bronce.sql` es un **notebook de Databricks**. En GitHub se ve como texto con líneas `-- MAGIC`: es normal. No lo abras en Colab.
 
