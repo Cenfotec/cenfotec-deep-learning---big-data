@@ -68,7 +68,7 @@ LIMIT 10
 -- MAGIC
 -- MAGIC | text | label | split | _fecha_carga | _archivo_origen |
 -- MAGIC |---|---|---|---|---|
--- MAGIC | estoy hasta el ojete de que me digáis que tengo cara de mala leche | 0 | train | 2026-11-10T19:42:11.000 | /Volumes/workspace/dlbd/raw/tweets/tweets_train.parquet |
+-- MAGIC | estoy hasta el ojete de que me digáis que tengo cara de mala leche | 0 | train | 2026-11-01T22:20:49.185+00:00 | /Volumes/workspace/dlbd/raw/tweets/tweets_train.parquet |
 
 -- COMMAND ----------
 

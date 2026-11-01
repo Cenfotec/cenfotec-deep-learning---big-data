@@ -51,14 +51,22 @@ Después crea el Git folder:
 2. Pega la URL de tu repositorio **solo hasta su nombre**, por ejemplo `https://github.com/ana-mora/dlbd-cenfotec` (sin `/tree/master` ni nada más al final). Si la URL está bien, **Git folder name** se llena solo; si queda vacío, revisa la URL. Deja **Sparse checkout mode** sin marcar y clic en **Create Git folder**.
 3. Abre el notebook (por ejemplo `lab1/parte3_bronce.sql`). Para subir tus cambios: botón de Git (rama arriba del notebook) → **Commit & push**.
 
+## Laboratorios nuevos
+
+Los laboratorios se publican a lo largo del curso, y las soluciones de cada uno después de su fecha de entrega. Para traerlos a tu repositorio:
+
+1. En **tu** repositorio en GitHub, abre la pestaña **Actions**. La primera vez, si GitHub lo pide, clic en **I understand my workflows, go ahead and enable them**.
+2. Elige **Actualizar laboratorios** → **Run workflow** → **Run workflow**.
+3. En un minuto aparecen las carpetas nuevas (por ejemplo `lab2/` o `soluciones/lab1/`).
+
+Solo agrega carpetas que todavía no tienes: **nunca toca un laboratorio en el que ya trabajaste**. Si tienes el Git folder de Databricks abierto, después usa **Pull** para ver los cambios ahí.
+
 ## Estructura
 
 | Carpeta | Contenido |
 |---|---|
-| `lab1/` | Laboratorio 1: de la API a la capa bronce |
-| `lab2/` | Laboratorio 2 (próximamente) |
-| `lab3/` | Laboratorio 3 (próximamente) |
-| `soluciones/` | Soluciones de referencia |
+| `lab1/`, `lab2/`, `lab3/` | Un laboratorio por carpeta, con su propio README que explica cómo abrir cada parte |
+| `soluciones/` | Soluciones de referencia, publicadas después de cada entrega |
 
 Cada notebook trae celdas listas para ejecutar, celdas `# TODO` que completas tú y celdas de verificación que te dicen si vas bien.
 
