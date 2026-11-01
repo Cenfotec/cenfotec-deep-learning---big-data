@@ -43,6 +43,22 @@ LIMIT 10
 -- MAGIC | `_archivo_origen` | ruta del archivo de donde viene la fila | `_metadata.file_path` |
 -- MAGIC
 -- MAGIC El guion bajo al inicio es una convención para distinguir los metadatos de los datos.
+-- MAGIC
+-- MAGIC **Salida esperada:** `DESCRIBE TABLE dlbd.bronze_tweets` (en la sección 3) muestra estas columnas:
+-- MAGIC
+-- MAGIC | col_name | data_type |
+-- MAGIC |---|---|
+-- MAGIC | text | string |
+-- MAGIC | label | bigint |
+-- MAGIC | split | string |
+-- MAGIC | _fecha_carga | timestamp |
+-- MAGIC | _archivo_origen | string |
+-- MAGIC
+-- MAGIC Y una fila de la tabla se ve así:
+-- MAGIC
+-- MAGIC | text | label | split | _fecha_carga | _archivo_origen |
+-- MAGIC |---|---|---|---|---|
+-- MAGIC | estoy hasta el ojete de que me digáis que tengo cara de mala leche | 0 | train | 2026-11-10T19:42:11.000 | /Volumes/workspace/dlbd/raw/tweets/tweets_train.parquet |
 
 -- COMMAND ----------
 
