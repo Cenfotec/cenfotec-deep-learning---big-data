@@ -2,14 +2,23 @@
 -- MAGIC %md
 -- MAGIC # Laboratorio 1 · Parte 3: Capa bronce
 -- MAGIC
+-- MAGIC > **Este archivo es un notebook de Databricks.** No se abre en Colab ni se ejecuta desde GitHub. Si lo estás viendo en GitHub como texto con líneas `-- MAGIC`, sigue los pasos de *Cómo abrirlo* (abajo) para trabajarlo en Databricks.
+-- MAGIC
 -- MAGIC La capa **bronce** guarda los datos **tal como llegaron**: sin limpiar, sin filtrar, sin cambiar tipos. Solo se le agregan columnas de metadatos que dicen cuándo y de dónde se cargó cada fila. Así, si algo sale mal más adelante, siempre se puede volver a la fuente.
 -- MAGIC
--- MAGIC **Cómo abrir este notebook:** desde el Git folder de tu repositorio (paso 4 de los Primeros pasos del README). Conéctalo a **Serverless** y ejecuta las celdas en orden.
+-- MAGIC ## Cómo abrirlo
+-- MAGIC
+-- MAGIC 1. En Databricks, ve a **Workspace** (barra izquierda) y entra a tu carpeta de usuario.
+-- MAGIC 2. Clic en **Create → Git folder**. Pega la URL de **tu** repositorio (por ejemplo `https://github.com/ana-mora/dlbd-cenfotec`) y clic en **Create Git folder**. Esto se hace una sola vez: el mismo Git folder sirve para todos los laboratorios.
+-- MAGIC 3. Dentro del Git folder, abre `lab1` → `parte3_bronce`. Databricks lo muestra como notebook, con celdas.
+-- MAGIC 4. Arriba a la derecha, en **Connect**, elige **Serverless**.
+-- MAGIC 5. Ejecuta las celdas en orden con **Shift + Enter**.
 -- MAGIC
 -- MAGIC Completa las celdas `-- TODO`; las de verificación te dicen si vas bien.
 
 -- COMMAND ----------
 
+-- Notebook de Databricks: ábrelo desde un Git folder (ver «Cómo abrirlo» arriba).
 USE CATALOG workspace;
 USE SCHEMA dlbd;
 
