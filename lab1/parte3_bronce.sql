@@ -4,7 +4,7 @@
 -- MAGIC
 -- MAGIC La capa **bronce** guarda los datos **tal como llegaron**: sin limpiar, sin filtrar, sin cambiar tipos. Solo se le agregan columnas de metadatos que dicen cuándo y de dónde se cargó cada fila. Así, si algo sale mal más adelante, siempre se puede volver a la fuente.
 -- MAGIC
--- MAGIC **Cómo abrir este notebook:** en Databricks, **Workspace → Create → Git folder**, pega la URL de tu repositorio y abre `lab1/parte3_bronce.sql`. Conéctalo a **Serverless** y ejecuta las celdas en orden.
+-- MAGIC **Cómo abrir este notebook:** desde el Git folder de tu repositorio (paso 4 de los Primeros pasos del README). Conéctalo a **Serverless** y ejecuta las celdas en orden.
 -- MAGIC
 -- MAGIC Completa las celdas `-- TODO`; las de verificación te dicen si vas bien.
 

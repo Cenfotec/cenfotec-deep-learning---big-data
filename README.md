@@ -4,11 +4,47 @@ CENFOTEC · SINT-646
 
 **Estudiante:** _escribe aquí tu nombre completo_
 
-## Cómo usar este repositorio
+## Primeros pasos
 
-1. Arriba a la derecha, clic en **Use this template → Create a new repository**. Déjalo **público**.
-2. Escribe tu nombre en la línea *Estudiante* de este README.
-3. Trabaja cada laboratorio dentro de su carpeta (`lab1/`, `lab2/`, `lab3/`) y súbelo a tu repositorio.
+Se hacen una sola vez, al inicio del curso.
+
+### 1. Crea tu repositorio
+
+1. En esta página, arriba a la derecha, clic en **Use this template → Create a new repository**.
+2. Ponle un nombre (por ejemplo `dlbd-cenfotec`) y déjalo **público**.
+3. En **tu** repositorio, abre este `README.md`, clic en el lápiz ✏️ y escribe tu nombre en la línea *Estudiante*. Guarda con **Commit changes**.
+
+A partir de aquí trabajas siempre en tu repositorio, no en la plantilla.
+
+### 2. Abre un notebook en Colab
+
+Si abres un `.ipynb` desde el explorador de archivos de Colab, se ve como texto. Ábrelo siempre desde GitHub:
+
+1. Entra a https://colab.research.google.com con tu cuenta de Google.
+2. **Archivo → Abrir cuaderno → GitHub**. La primera vez, Colab te pide autorizar el acceso a GitHub: acepta.
+3. Escribe tu usuario de GitHub, elige tu repositorio y el notebook (por ejemplo `lab1/parte1_verificacion.ipynb`).
+
+Atajo: en la dirección del notebook en GitHub, cambia `github.com` por `colab.research.google.com/github`.
+
+### 3. Guarda tu trabajo en GitHub
+
+Colab no guarda en GitHub automáticamente. Al terminar (o cada cierto tiempo):
+
+1. **Archivo → Guardar una copia en GitHub**.
+2. Elige tu repositorio, la rama `master` y la **misma ruta** del notebook (por ejemplo `lab1/parte1_verificacion.ipynb`).
+3. Escribe un mensaje corto y clic en **Aceptar**.
+
+Guárdalo después de ejecutar las celdas: así quedan las salidas, que son parte de la entrega.
+
+### 4. Conecta tu repositorio a Databricks
+
+Los notebooks `.sql` se trabajan en Databricks:
+
+1. En Databricks, **Workspace → Create → Git folder**.
+2. Pega la URL de tu repositorio y clic en **Create Git folder**.
+3. Abre el notebook (por ejemplo `lab1/parte3_bronce.sql`). Para subir tus cambios: botón de Git (rama arriba del notebook) → **Commit & push**.
+
+Para hacer push, Databricks te pide un token de GitHub la primera vez: **Settings → Linked accounts → Git integration**.
 
 ## Estructura
 
