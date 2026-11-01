@@ -38,13 +38,18 @@ Guárdalo después de ejecutar las celdas: así quedan las salidas, que son part
 
 ### 4. Conecta tu repositorio a Databricks
 
-Los notebooks `.sql` se trabajan en Databricks:
+Los notebooks `.sql` se trabajan en Databricks. Primero conecta Databricks con tu cuenta de GitHub (una sola vez), para poder subir cambios:
+
+1. En Databricks, tu perfil (arriba a la derecha) → **Settings → Linked accounts → Git integration**.
+2. Elige **GitHub** y **Link Git account**. Se abre GitHub: autoriza a Databricks. Si GitHub pregunta a qué repositorios dar acceso, elige **Only select repositories** y marca tu repositorio del curso.
+
+   (También existe la opción de un token personal de GitHub, *Personal access token*, pero no hace falta.)
+
+Después crea el Git folder:
 
 1. En Databricks, **Workspace → Create → Git folder**.
 2. Pega la URL de tu repositorio, escribe un nombre en **Git folder name** (por ejemplo `dlbd-cenfotec`), deja **Sparse checkout mode** sin marcar y clic en **Create Git folder**.
 3. Abre el notebook (por ejemplo `lab1/parte3_bronce.sql`). Para subir tus cambios: botón de Git (rama arriba del notebook) → **Commit & push**.
-
-Para hacer push, Databricks te pide un token de GitHub la primera vez: **Settings → Linked accounts → Git integration**.
 
 ## Estructura
 

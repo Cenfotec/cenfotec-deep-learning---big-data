@@ -8,6 +8,7 @@
 -- MAGIC
 -- MAGIC ## Cómo abrirlo
 -- MAGIC
+-- MAGIC 0. **Solo la primera vez:** conecta Databricks con GitHub para poder subir tus cambios: tu perfil → **Settings → Linked accounts → Git integration → GitHub → Link Git account**, y autoriza en GitHub (puedes darle acceso solo a tu repositorio del curso).
 -- MAGIC 1. En Databricks, ve a **Workspace** (barra izquierda) y entra a tu carpeta de usuario.
 -- MAGIC 2. Clic en **Create → Git folder**. Pega la URL de **tu** repositorio (por ejemplo `https://github.com/ana-mora/dlbd-cenfotec`). En **Git folder name** escribe cualquier nombre, por ejemplo `dlbd-cenfotec`; deja **Sparse checkout mode** sin marcar. Clic en **Create Git folder**. Esto se hace una sola vez: el mismo Git folder sirve para todos los laboratorios.
 -- MAGIC 3. Dentro del Git folder, abre `lab1` → `parte3_bronce`. Databricks lo muestra como notebook, con celdas.
