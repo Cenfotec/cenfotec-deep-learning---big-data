@@ -18,7 +18,7 @@ Si el error no se maneja, pueden pasar dos cosas: el proceso se cae y no se guar
 
 ```
 filas | archivos | fecha_carga             | total_ok | archivos_ok | metadatos_ok
-3030  | 3        | 2026-11-10T19:42:11.000 | null     | null        | null
+3033  | 3        | 2026-11-10T19:42:11.000 | null     | null        | null
 ```
 
 `assert_true` devuelve `null` cuando la condición se cumple; si falla, la celda da error.

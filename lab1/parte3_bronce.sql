@@ -68,12 +68,12 @@ DESCRIBE TABLE dlbd.bronze_tweets
 
 -- COMMAND ----------
 
--- Filas por split: train 1838, validation 323, test 869
+-- Filas por split: train 1839, validation 324, test 870
 SELECT
   split,
   count(*) AS filas,
   assert_true(
-    count(*) = CASE split WHEN 'train' THEN 1838 WHEN 'validation' THEN 323 WHEN 'test' THEN 869 END,
+    count(*) = CASE split WHEN 'train' THEN 1839 WHEN 'validation' THEN 324 WHEN 'test' THEN 870 END,
     concat('Cantidad incorrecta en ', split)
   ) AS verificacion
 FROM dlbd.bronze_tweets
@@ -87,7 +87,7 @@ SELECT
   count(*) AS filas,
   count(DISTINCT _archivo_origen) AS archivos,
   min(_fecha_carga) AS fecha_carga,
-  assert_true(count(*) = 3030, 'La tabla debe tener 3030 filas') AS total_ok,
+  assert_true(count(*) = 3033, 'La tabla debe tener 3033 filas') AS total_ok,
   assert_true(count(DISTINCT _archivo_origen) = 3, 'Deben ser 3 archivos de origen') AS archivos_ok,
   assert_true(count_if(_fecha_carga IS NULL OR _archivo_origen IS NULL) = 0, 'Hay metadatos vacíos') AS metadatos_ok
 FROM dlbd.bronze_tweets
