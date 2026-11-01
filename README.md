@@ -61,7 +61,7 @@ Cada notebook trae celdas listas para ejecutar, celdas `# TODO` que completas t�
 
 - **Google Colab** para los notebooks de Python.
 - **Databricks Free Edition** para SQL y las tablas del pipeline.
-- **Hugging Face** como fuente de datos y modelos.
+- **Hugging Face** como fuente de datos y modelos. Usamos datos y modelos públicos, así que no necesitas cuenta.
 
 ## Regla de oro
 
