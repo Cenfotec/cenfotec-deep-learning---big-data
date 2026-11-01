@@ -1,0 +1,55 @@
+# Trae a tu repositorio los laboratorios y soluciones que el profesor publique en la plantilla.
+# Uso: pestaña Actions → "Actualizar laboratorios" → Run workflow.
+# Nunca modifica un laboratorio que ya tengas: solo agrega carpetas nuevas.
+name: Actualizar laboratorios
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Copiar laboratorios y soluciones nuevos
+        env:
+          PLANTILLA: https://github.com/Cenfotec/cenfotec-deep-learning---big-data.git
+        run: |
+          set -euo pipefail
+          git clone --depth 1 "$PLANTILLA" /tmp/plantilla
+
+          # ¿La carpeta no existe o solo tiene archivos .gitkeep?
+          vacia() { [ ! -d "$1" ] || [ -z "$(find "$1" -type f ! -name .gitkeep -print -quit)" ]; }
+
+          agregadas=()
+          for origen in /tmp/plantilla/lab*/ /tmp/plantilla/soluciones/lab*/; do
+            [ -d "$origen" ] || continue
+            destino="${origen#/tmp/plantilla/}"
+            destino="${destino%/}"
+            if vacia "$destino"; then
+              rm -rf "$destino"
+              mkdir -p "$(dirname "$destino")"
+              cp -r "${origen%/}" "$destino"
+              agregadas+=("$destino")
+            fi
+          done
+
+          if [ ${#agregadas[@]} -eq 0 ]; then
+            echo "Tu repositorio ya está al día: no hay laboratorios nuevos." | tee -a "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- "${agregadas[@]}"
+          git commit -m "Actualizar laboratorios desde la plantilla: ${agregadas[*]}"
+          git push
+
+          {
+            echo "### Carpetas agregadas"
+            for d in "${agregadas[@]}"; do echo "- \`$d\`"; done
+          } >> "$GITHUB_STEP_SUMMARY"
